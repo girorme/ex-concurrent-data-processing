@@ -1,7 +1,7 @@
 Concurrent data processing
 ===
 
-Implementations and studies surrounding concurrency/parallelism on elixir/erlang
+My annotations/implementations/studies surrounding concurrency/parallelism on elixir/erlang
 
 ### Task
 
