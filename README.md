@@ -5,7 +5,7 @@ Implementations and studies surrounding concurrency/parallelism on elixir/erlang
 
 ### Task
 
-#### Speeding up processes using preventing ordered results on stream
+#### Speeding up processes preventing ordered results on stream
 - The default behaviour of *Task.async_stream* is return the results in same order they are passed to the stream. This can cause a "slow down" result since the stream will wait for slow processes results:
 
 example 1
