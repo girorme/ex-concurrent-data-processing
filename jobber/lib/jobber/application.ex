@@ -14,13 +14,10 @@ defmodule Jobber.Application do
     ]
 
     children = [
-      # Starts a worker by calling: Jobber.Worker.start_link(arg)
-      # {Jobber.Worker, arg}
+      {Registry, keys: :unique, name: Jobber.JobRegistry},
       {DynamicSupervisor, job_runner_config}
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Jobber.Supervisor]
     Supervisor.start_link(children, opts)
   end

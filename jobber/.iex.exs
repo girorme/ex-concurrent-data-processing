@@ -1,7 +1,7 @@
 good_job = fn ->
-  Process.sleep(3000)
+  Process.sleep(60_000)
   {:ok, []}
-end
+  end
 
 bad_job = fn ->
   Process.sleep(3000)
