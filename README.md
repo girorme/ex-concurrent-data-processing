@@ -6,7 +6,8 @@ My annotations/implementations/studies surrounding concurrency/parallelism on el
 > Some examples and citations extracted from: Concurrent data processing in elixir from pragprog (by Svilen Gospodinov)
 
 ### Example projects
-[Sender - Send email using genserver as example](sender/)
+- [Sender - Send email using genserver as example](sender/)
+- [Jobber - Run concurrent process (Process pool and registration via Registry)](jobber/)
 
 ### Task
 
