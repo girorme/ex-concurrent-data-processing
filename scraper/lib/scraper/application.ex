@@ -8,12 +8,10 @@ defmodule Scraper.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Scraper.Worker.start_link(arg)
-      # {Scraper.Worker, arg}
+      PageProducer,
+      PageConsumer
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Scraper.Supervisor]
     Supervisor.start_link(children, opts)
   end
