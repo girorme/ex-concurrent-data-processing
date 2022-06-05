@@ -8,6 +8,7 @@ My annotations/implementations/studies surrounding concurrency/parallelism on el
 ### Example projects
 - [Sender - Send email using genserver as example](sender/)
 - [Jobber - Run concurrent process (Process pool and registration via Registry)](jobber/)
+- [Scraper - Multistage concurrent work with genstage](scraper/)
 
 ### Task
 
